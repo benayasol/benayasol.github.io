@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Benaya Solutions</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- site icons -->
+<!-- <link href="img/benayalogo.png" rel="icon" sizes="18x18" type="image/x-icon"> -->
+<link rel="icon" href="images/logos/benayalogoonly.png" type="image/gif" />
+<!-- bootstrap css -->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<!-- Site css -->
+<link rel="stylesheet" href="css/style.css" />
+<!-- responsive css -->
+<link rel="stylesheet" href="css/responsive.css" />
+<!-- colors css -->
+<link rel="stylesheet" href="css/colors1.css" />
+<!-- custom css -->
+<link rel="stylesheet" href="css/custom.css" />
+<!-- wow Animation css -->
+<link rel="stylesheet" href="css/animate.css" />
+<!-- revolution slider css -->
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
+<link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
+<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" />
+
+
+<style>
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #0d9a50;
+    color: #fff;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    /* border-radius: 50%; */
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+.metis .tp-bullet {
+    
+    width: 22px;
+    height: 22px;
+	}
+	.zeus .tp-title-wrap{
+	width:none;
+	}
+	.tp-bullet-img-wrap{
+	display:none;
+	}
+	.metis .tp-bullet-title{
+	display:none;
+	}
+	#box {
+  
+ 
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+ 
+}
+	#box:hover {
+ border: solid #8dc63f 1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  padding: 32px 9px 27px 0px;
+
+}
+.zoom {
+ 
+  transition: transform .2s; /* Animation */
+ 
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.service_blog_inner .icon img {
+    width: 88px;
+}
+
+
+.product_list {
+    min-height: 272px;
+}
+
+
+
+
+/* product view details */ 
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.plist{
+  font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 25px;
+    height: 50px;
+    border: none !important;
+    line-height: 52px;
+    background: #bddc9e;
+    border-radius: 0;
+    padding: 0px 29px 0px 29px;
+	cursor: pointer;
+  margin: 12px 0 0 0;
+
+}
+.plist:hover ,.plist:focus, .plist:active{
+    background: #0f7b37;
+    color: #fff;
+}
+.plist:active{
+  background: #0f7b37;
+}
+.product_list {
+    min-height: 272px;
+    
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1144px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 88px;
+  color: #f1f1f1;
+  font-size: 81px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.information_bottom {
+  
+    padding: 0px 0px 6px 0px;
+}
+.num_cont{
+text-align: left;
+    padding: 0px 0px 0px 9px;
+	font-family: 'Poppins';
+}
+.info_cont h4, .info_cont p {
+    color: #898989;
+    font-family: 'Poppins';
+	font-weight: 0px;
+}
+#navbar_menu ul ul li a:hover {
+	
+	background : #0d9a50;
+}
+
+
+/* client slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .slide img {
+    width: 85px;
+  }
+}
+
+
+
+</style>
+</head>
+<body id="default_theme" class="it_service">
+<!-- loader -->
+<div class="bg_load"> <img class="loader_animation" src="images/logos/benayalogo.png" style="max-height: 200px;" alt="#" /> </div>
+<!-- end loader -->
+<!-- header -->
+<header id="default_header" class="header_style_1">
+  <!-- header top -->
+ 
+  <!-- end header top -->
+  <!-- header bottom -->
+  <div class="header_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <!-- logo start -->
+          <div class="logo"> <a href="#"><img src="images/logos/benayalogo.png" alt="logo" /></a> </div>
+          <!-- logo end -->
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+          <!-- menu start -->
+          <div class="menu_side">
+            <div id="navbar_menu">
+              <ul class="first-ul">
+                <li> <a class="active" href="index.html">Home</a>                  
+                </li>
+               <li><a  href="about.html">About Us</a></li>
+                <li> <a href="#service">Service</a>                  
+                </li>
+                 <li><a href="products.html">Products</a>
+                  <ul>
+                      <li><a href="products.html">Colour Multi Functionals</a></li>
+                    <li><a href="products.html">B / W Multi Functionals</a></li>
+					<li><a href="products.html">Digital Duplicators</a></li>
+                   
+                  </ul>
+                 </li>
+                <li> <a href="contact.html">Contact</a>
+                  
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <!-- menu end -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header bottom end -->
+</header>
+<!-- end header -->
+<!-- section -->
+<div id="slider" class="section main_slider">
+  <div class="container-fuild">
+    <div class="row">
+      <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classicslider1" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+        <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+        <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+          <ul>
+            <li data-index="rs-1812" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Computer Services" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="images/intro/slide1.jpg"  alt="#"  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+              <!-- LAYERS -->
+              <!-- LAYER NR. BG -->
+              <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" 
+                              id="slide-270-layer-1012" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                              data-width="full"
+                              data-height="full"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                              data-transform_out="s:300;s:300;" 
+                              data-start="750" 
+                              data-basealign="slide" 
+                              data-responsive_offset="on" 
+                              data-responsive="off"
+                              style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-912" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['15','15','15','15']" 
+                              data-width="500"
+                              data-height="140"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:0px;" 
+                              data-mask_out="x:inherit;y:inherit;" 
+                              data-start="2000" 
+                              data-responsive_offset="on" 
+                              style="z-index: 5;background-color:rgba(29, 29, 29, 0.85);border-color:rgba(0, 0, 0, 0.50);"> </div>
+              <!-- LAYER NR. 2 -->
+              <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-112" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                              data-fontsize="['70','70','70','35']"
+                              data-lineheight="['70','70','70','50']"
+                              data-width="none"
+                              data-height="none"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                              data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                              data-start="1000" 
+                              data-splitin="chars" 
+                              data-splitout="none" 
+                              data-responsive_offset="on" 
+                              data-elementdelay="0.05" 
+                              style="z-index: 6; white-space: nowrap;fon">Printer Sales & Services </div>
+              <!-- LAYER NR. 3 -->
+              <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-412" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['52','51','51','31']" 
+                              data-width="none"
+                              data-height="none"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                              data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                              data-start="1500" 
+                              data-splitin="none" 
+                              data-splitout="none" 
+                              data-responsive_offset="on" 
+                              style="z-index: 7; white-space: nowrap;font-size: 13px;">Available On Benaya Solutions </div>
+            </li>
+            <li data-index="rs-181" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Easy To Use & Customize" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="images/intro/afford.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+              <!-- LAYERS -->
+              <!-- LAYER NR. BG -->
+              <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" 
+                              id="slide-270-layer-101" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                              data-width="full"
+                              data-height="full"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                              data-transform_out="s:300;s:300;" 
+                              data-start="750" 
+                              data-basealign="slide" 
+                              data-responsive_offset="on" 
+                              data-responsive="off"
+                              style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-91" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['15','15','15','15']" 
+                              data-width="500"
+                              data-height="140"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:0px;" 
+                              data-mask_out="x:inherit;y:inherit;" 
+                              data-start="2000" 
+                              data-responsive_offset="on" 
+                              style="z-index: 5;background-color:rgba(29, 29, 29, 0.85);border-color:rgba(0, 0, 0, 0.50);"> </div>
+              <!-- LAYER NR. 2 -->
+              <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-11" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                              data-fontsize="['70','70','70','35']"
+                              data-lineheight="['70','70','70','50']"
+                              data-width="none"
+                              data-height="none"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                              data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                              data-start="1000" 
+                              data-splitin="chars" 
+                              data-splitout="none" 
+                              data-responsive_offset="on" 
+                              data-elementdelay="0.05" 
+                              style="z-index: 6; white-space: nowrap;">Fast & Affordable </div>
+              <!-- LAYER NR. 3 -->
+              <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-41" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['52','51','51','31']" 
+                              data-width="none"
+                              data-height="none"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                              data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                              data-start="1500" 
+                              data-splitin="none" 
+                              data-splitout="none" 
+                              data-responsive_offset="on" 
+                              style="z-index: 7; white-space: nowrap;">Available On Benaya Solutions  </div>
+            </li>
+            <li data-index="rs-18" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Perfectly Responsive" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="images/intro/custom.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+              <!-- LAYERS -->
+              <!-- LAYER NR. BG -->
+              <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" 
+                              id="slide-270-layer-10" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                              data-width="full"
+                              data-height="full"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                              data-transform_out="s:300;s:300;" 
+                              data-start="750" 
+                              data-basealign="slide" 
+                              data-responsive_offset="on" 
+                              data-responsive="off"
+                              style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-9" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['15','15','15','15']" 
+                              data-width="500"
+                              data-height="140"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:0px;" 
+                              data-mask_out="x:inherit;y:inherit;" 
+                              data-start="2000" 
+                              data-responsive_offset="on" 
+                              style="z-index: 5;background-color:rgba(29, 29, 29, 0.85);border-color:rgba(0, 0, 0, 0.50);"> </div>
+              <!-- LAYER NR. 2 -->
+              <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-1" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                              data-fontsize="['70','70','70','35']"
+                              data-lineheight="['70','70','70','50']"
+                              data-width="none"
+                              data-height="none"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                              data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                              data-start="1000" 
+                              data-splitin="chars" 
+                              data-splitout="none" 
+                              data-responsive_offset="on" 
+                              data-elementdelay="0.05" 
+                              style="z-index: 6; white-space: nowrap;">Best Customer Service </div>
+              <!-- LAYER NR. 3 -->
+              <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" 
+                              id="slide-18-layer-4" 
+                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                              data-y="['middle','middle','middle','middle']" data-voffset="['52','51','51','31']" 
+                              data-width="none"
+                              data-height="none"
+                              data-whitespace="nowrap"
+                              data-transform_idle="o:1;"
+                              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                              data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                              data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                              data-start="1500" 
+                              data-splitin="none" 
+                              data-splitout="none" 
+                              data-responsive_offset="on" 
+                              style="z-index: 7; white-space: nowrap;">Available On Benaya Solutions  </div>
+            </li>
+          </ul>
+          <div class="tp-static-layers"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end section -->
+
+
+<!-- section -->
+<div class="section padding_layout_1" style=" padding-top: 84px;padding-bottom: 66px;">
+  <div class="container">
+    
+    <div class="row">
+      
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+        <div class="full text_align_center margin_bottom_30 fade-in one"  >
+          <div class="center">
+            <div class="icon"> <img src="images/vision.png" class="zoom" alt="#" /> </div>
+          </div>
+          <h4 class="theme_color  " style="font-size: 27px;"> VISION</h4>
+          <p style="font-size: 20px;line-height: 30px;">Profitable growth through superior customer service, innovation, quality and commitment</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 fade-in two" >
+        <div class="full text_align_center margin_bottom_30">
+          <div class="center">
+            <div class="icon"> <img src="images/mision.ico" class="zoom" alt="#" /> </div>
+          </div>
+          <h4 class="theme_color ml6" style="font-size: 27px;"> MISSION
+		 </h4>
+          <p style="font-size: 20px;line-height: 30px;">To achieve excellence in service, quality, reliability and customer care</p>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+<!-- end section -->
+<!-- section -->
+<div class="section padding_layout_1 light_silver gross_layout" id="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="full">
+          <div class="main_heading text_align_left">
+            <h2>Our Services</h2>
+            <p class="large">Fast & affordable services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="full">
+              <div class="service_blog_inner">
+                <div class="icon text_align_left "><img src="images/sale.png" class="zoom"alt="#" /></div>
+                <h4 class="service-heading">RICOH product sales</h4>
+                <p>Benaya solutions is one of the leading suppliers of office automation equipment in association with Ricoh. Ricoh is the world's leading suppliers of office automation equipment, including copiers , facsimiles, machiens, data processing systems, and related suppliers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="full">
+              <div class="service_blog_inner">
+                <div class="icon text_align_left"><img src="images/money.png" class="zoom" alt="#" /></div>
+                <h4 class="service-heading">Fast & Affordable services</h4>
+                <p>Provides fast and affordable service without compromising the quality </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="full">
+              <div class="service_blog_inner">
+                <div class="icon text_align_left"><img src="images/cm2.png" class="zoom" alt="#" /></div>
+                <h4 class="service-heading">Customer serivice</h4>
+                <p>We provide expert customer service  </p>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end section -->
+<!-- section -->
+<div class="section padding_layout_1" style="text-align:center" id="prod">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="full">
+          <div class="main_heading text_align_center">
+            <h2>Our Products</h2>
+            <p class="large">We package the products with best services to make you a happy customer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	 <div id="testimonial_slider" class="carousel slide" data-ride="carousel" style="padding-right: 0;">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#testimonial_slider" data-slide-to="0" class="active"></li>
+              <li data-target="#testimonial_slider" data-slide-to="1"></li>
+             
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+			
+              <div class="carousel-item active">
+			  
+			  <div class="row">
+			 
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+				    <a href="#">
+						<div class="product_list">
+						  <div class="product_img"> <img class="img-responsive" src="images/product/ricoh/r1.jpg" alt="" id="id1" onclick="myFunction()"> </div>
+						  <div class="product_detail_btm">
+						  <div class="center">
+						  <h4><a href="#">RICOH MP 6055SP</a></h4>
+						  </div>
+						  <!-- <div class="starratin"> -->
+						  <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+						  <!-- </div> -->
+						  <!-- <div class="product_price"> -->
+						  <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+						  <!-- </div> -->
+						  </div>
+						</div></a>
+						<img id="bigpic" src="images/product/prdt-desc/6055SP-3555SP.jpg" style="display:none;"/>	
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+					  <a href="#">
+			<div class="product_list">
+			  <div class="product_img"> <img class="img-responsive" src="images/product/ricoh/r2.jpg" alt="" id="id2" onclick="myFunction2()"> </div>
+			  <div class="product_detail_btm">
+			  <div class="center">
+				<h4><a href="#">RICOH MP 3555SP</a></h4>
+			  </div>
+			  <!-- <div class="starratin"> -->
+				<!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+			  <!-- </div> -->
+			  <!-- <div class="product_price"> -->
+				<!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+			  <!-- </div> -->
+			  </div>
+			</div></a>
+			<img id="bigpic2" src="images/product/prdt-desc/6055SP-3555SP.jpg" style="display:none;"/>
+				  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+				  <a href="#">
+				<div class="product_list">
+				  <div class="product_img"> <img class="img-responsive" src="images/product/ricoh/r3.jpg" alt="" id="id3" onclick="myFunction3()"> </div>
+				  <div class="product_detail_btm">
+				  <div class="center">
+					<h4><a href="#">RICOH MP 6503SP</a></h4>
+				  </div>
+				  <!-- <div class="starratin"> -->
+					<!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+				  <!-- </div> -->
+				  <!-- <div class="product_price"> -->
+					<!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+				  <!-- </div> -->
+				  </div>
+				</div></a>
+				<img id="bigpic3" src="images/product/prdt-desc/6503SP.jpg" style="display:none;"/>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+					<a href="#">
+          <div class="product_list">
+            <div class="product_img"> <img class="img-responsive" src="images/product/ricoh/r4.jpg" alt="" id="id4" onclick="myFunction4()"> </div>
+            <div class="product_detail_btm">
+            <div class="center">
+            <h4><a href="#">RICOH MP 310SP</a></h4>
+            </div>
+            <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+            <!-- </div> -->
+            <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+            <!-- </div> -->
+            </div>
+          </div></a>
+        <img id="bigpic4" src="images/product/prdt-desc/310SP.jpg" style="display:none;"/>
+					</div>
+				  </div>
+			  </div>
+               
+				<div class="carousel-item ">
+			  
+			  <div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+				 <a href="#">
+            <div class="product_list">
+              <div class="product_img"> <img class="img-responsive" src="images/product/ricoh/r5.jpg" alt="" id="id5" onclick="myFunction5()"> </div>
+              <div class="product_detail_btm">
+              <div class="center">
+              <h4><a href="#">RICOH MP C2011</a></h4>
+              </div>
+              <!-- <div class="starratin"> -->
+              <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+              <!-- </div> -->
+              <!-- <div class="product_price"> -->
+              <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+              <!-- </div> -->
+              </div>
+            </div></a>
+			 <img id="bigpic5" src="images/product/prdt-desc/C2011SP.jpg" style="display:none;"/>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+					 <a href="#">
+              <div class="product_list">
+                <div class="product_img"> <img class="img-responsive" src="images/product/ricoh/r6.jpg" alt="" id="id6" onclick="myFunction6()"> </div>
+                <div class="product_detail_btm">
+                <div class="center">
+                <h4><a href="#">RICOH MP C407SP</a></h4>
+                </div>
+                <!-- <div class="starratin"> -->
+                <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+                <!-- </div> -->
+                <!-- <div class="product_price"> -->
+                <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+                <!-- </div> -->
+                </div>
+              </div></a>
+			  <img id="bigpic6" src="images/product/prdt-desc/C407SP.jpg" style="display:none;"/>
+				  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+				   <a href="#">
+                <div class="product_list">
+                  <div class="product_img"> <img class="img-responsive" src="images/product/bw/ricoh2014.png" alt="" id="id7" onclick="myFunction7()"> </div>
+                  <div class="product_detail_btm">
+                  <div class="center">
+                  <h4><a href="#">RICOH MP 2014</a></h4>
+                  </div>
+                  <!-- <div class="starratin"> -->
+                  <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="product_price"> -->
+                  <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+                  <!-- </div> -->
+                  </div>
+                </div></a>
+				 <img id="bigpic7" src="images/product/prdt-desc/214.jpg" style="display:none;"/>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+					<a href="#">
+                  <div class="product_list">
+                    <div class="product_img"> <img class="img-responsive" src="images/product/ricoh/r8.jpg" alt="" id="id8" onclick="myFunction8()"> </div>
+                    <div class="product_detail_btm">
+                    <div class="center">
+                    <h4><a href="#">RICOH MP 305+ SP</a></h4>
+                    </div>
+                    <!-- <div class="starratin"> -->
+                    <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="product_price"> -->
+                    <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+                    <!-- </div> -->
+                    </div>
+                  </div></a>
+				  <img id="bigpic8" src="images/product/prdt-desc/305+SP.jpg" style="display:none;"/>
+					</div>
+					
+				  </div>
+			  </div>
+           
+              
+                </div>
+            </div>
+			
+			
+          </div>
+   <a class="btn main_bt" href="products.html">View More</a>
+  </div>
+
+<!-- end section -->
+<!-- section -->
+<!-- <div class="section padding_layout_1 light_silver gross_layout right_gross_layout"> -->
+  <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+      <!-- <div class="col-md-12"> -->
+        <!-- <div class="full"> -->
+          <!-- <div class="main_heading text_align_right"> -->
+            <!-- <h2>Our Feedback</h2> -->
+            <!-- <p class="large">Easy and effective way to get your device repaired.</p> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="row counter"> -->
+      <!-- <div class="col-md-4"> </div> -->
+      <!-- <div class="col-md-8"> -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50"> -->
+            <!-- <div class="text_align_right"><i class="fa fa-smile-o"></i></div> -->
+            <!-- <div class="text_align_right"> -->
+              <!-- <p class="counter-heading text_align_right">Happy Customers</p> -->
+            <!-- </div> -->
+            <!-- <h5 class="counter-count">2150</h5> -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50"> -->
+            <!-- <div class="text_align_right"><i class="fa fa-laptop"></i></div> -->
+            <!-- <div class="text_align_right"> -->
+              <!-- <p class="counter-heading text_align_right">Laptop Repaired</p> -->
+            <!-- </div> -->
+            <!-- <h5 class="counter-count">1280</h5> -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50"> -->
+            <!-- <div class="text_align_right"><i class="fa fa-desktop"></i></div> -->
+            <!-- <div class="text_align_right"> -->
+              <!-- <p class="counter-heading">Computer Repaired</p> -->
+            <!-- </div> -->
+            <!-- <h5 class="counter-count">848</h5> -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50"> -->
+            <!-- <div class="text_align_right"><i class="fa fa-windows"></i></div> -->
+            <!-- <div class="text_align_right"> -->
+              <!-- <p class="counter-heading">OS Installed</p> -->
+            <!-- </div> -->
+            <!-- <h5 class="counter-count">450</h5> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
+<!-- end section -->
+
+<!--clients section -->
+<div class="section padding_layout_1 testmonial_section white_fonts" style="visibility: visible; animation-name: fadeIn;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="full">
+          <div class="main_heading text_align_left">
+            <h2 style="text-transform: none;">OUR CLIENTS</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="container">
+	  
+	   <section class="customer-logos slider">
+		  <div class="slide"><img src="images/clients/sbi.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/Bank-of-Baroda-Logo.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/logo-four-points-by-sheraton.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/tident.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/skyline.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/national.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/cool.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/Kone-og.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/Bosch-logo.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/sboa.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/viswajyothi.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/DB-School-Logo.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/rajagiri.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/carmel.png" width="150" height="152"></div>
+		   <div class="slide"><img src="images/clients/global.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/Lourdes.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/sreesankara.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/maharajas.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/lourdeshospital.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/lakshmi.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/mother2.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/National_Investigation_Agency_India_logo.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/cochinChamber.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/nedspice.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/olam.png" width="150" height="152"></div>
+	   </section>
+	</div>   
+   
+  </div>
+</div>
+<!-- end section -->
+<!-- section -->
+<div class="section " id="cont" style="background:#fff">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="full">
+          <div class="contact_us_section">
+            <div class="call_icon"> <img src="images/it_service/phone_icon.png" alt="#" /> </div>
+            <div class="inner_cont">
+              <h2>GET IN TOUCH</h2>
+              <p>Get answers and advice from people you want it from.</p>
+            </div>
+            <div class="button_Section_cont"> <a class="btn dark_gray_bt" href="contact.html">Contact us</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end section -->
+
+<!-- Modal -->
+
+<!-- End Model search bar -->
+<footer class="footer_style_2">
+  <div class="container-fuild">
+    <div class="row">
+     
+      <div class="footer_blog">
+        <div class="row">
+          <div class="col-md-3">
+              <img src="images/logos/benayalogo.png" style="max-height: 150px;" alt="#" />
+          </div>
+          <div class="col-md-3">
+            <div class="main-heading left_text">
+              <h2>Additional links</h2>
+            </div>
+            <ul class="footer-menu">
+              <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+			  <li><a href="about.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+              <li><a href="#service"><i class="fa fa-angle-right"></i> Services</a></li>
+              <li><a href="#prod"><i class="fa fa-angle-right"></i> Products</a></li>
+              
+              <li><a href="#cont"><i class="fa fa-angle-right"></i> Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="main-heading left_text">
+              <h2>Services</h2>
+            </div>
+            <ul class="footer-menu">
+              <li><a href="#"><i class="fa fa-angle-right"></i> RICOH product sales</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i> Fast & Affordable services</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i> Customer serivice</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="main-heading left_text">
+              <h2>Contact us</h2>
+            </div>
+           <div class="information_bottom text_align_center">
+                  <div class="icon_bottom"> <i class="fa fa-road" aria-hidden="true"></i> </div>
+                  <div class="info_cont">
+                   
+                    <p>No 2456 bavarapadam road,<br>
+					Thammanam, Kochi 682032</p>
+                  </div>
+                </div>
+				
+				<div class="information_bottom text_align_center">
+                  <div class="icon_bottom"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
+                  <div class="info_cont">
+                    <p>benayasolutions@gmail.com</p>
+                    
+                  </div>
+                </div>
+				<div class="information_bottom text_align_center">
+                  <div class="icon_bottom"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
+                  <div class="info_cont num_cont">
+                    <p>8138998877, 9447039682, 9061729900</p>
+                   
+                  </div>
+                </div>
+            <!-- <div class="footer_mail-section"> -->
+              <!-- <form> -->
+                <!-- <fieldset> -->
+                <!-- <div class="field"> -->
+                  <!-- <input placeholder="Email" type="text"> -->
+                  <!-- <button class="button_custom"><i class="fa fa-envelope" aria-hidden="true"></i></button> -->
+                <!-- </div> -->
+                <!-- </fieldset> -->
+              <!-- </form> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+	  <div class="map_section">
+       <div style="width: 100%"><iframe width="100%" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20Benaya%20Solutions,%20No%202456%20bavarapadath%20road,%20Thammanam,%20Kochi%20682032+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.mapsdirections.info/en/measure-map-radius/">Draw Map Circle</a></div>
+		 </div>
+      <div class="cprt">
+        <p>benaya solutions © Copyrights 2020 </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- footer -->
+<!-- The Modal to display description -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<a href="#" class="back-to-top" style="display: none;"><i class="fa fa-chevron-up" ></i></a>
+<!-- end footer -->
+<!-- js section -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- menu js -->
+<script src="js/menumaker.js"></script>
+<!-- wow animation -->
+<script src="js/wow.js"></script>
+<!-- custom js -->
+<script src="js/custom.js"></script>
+<!-- revolution js files -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+<!-- client slider -->
+<script src="js/slick.js"></script>
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+	function myFunction() {
+	modal.style.display = "block";
+	  modalImg.src = document.getElementById('bigpic').src;
+	}
+	function myFunction2() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic2').src;
+	}
+	function myFunction3() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic3').src;
+	}
+	function myFunction4() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic4').src;
+	}
+	function myFunction5() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic5').src;
+	}
+	function myFunction6() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic6').src;
+	}
+	function myFunction7() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic7').src;
+	}
+	function myFunction8() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic8').src;
+	}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<script>
+jQuery(document).ready(function( $ ) {
+
+  // Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+  $('.back-to-top').click(function(){
+    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+    return false;
+  });
+  
+  });
+  </script>
+
+</body>
+</html>

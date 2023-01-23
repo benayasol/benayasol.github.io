@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Benaya Solutions</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- site icons -->
+<!-- <link href="img/benayalogo.png" rel="icon" sizes="18x18" type="image/x-icon"> -->
+<link rel="icon" href="images/logos/benayalogoonly.png" type="image/gif" />
+<!-- bootstrap css -->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<!-- Site css -->
+<link rel="stylesheet" href="css/style.css" />
+<!-- responsive css -->
+<link rel="stylesheet" href="css/responsive.css" />
+<!-- colors css -->
+<link rel="stylesheet" href="css/colors1.css" />
+<!-- custom css -->
+<link rel="stylesheet" href="css/custom.css" />
+<!-- wow Animation css -->
+<link rel="stylesheet" href="css/animate.css" />
+<!-- revolution slider css -->
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
+<link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
+<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" />
+
+
+<style>
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #0d9a50;
+    color: #fff;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    /* border-radius: 50%; */
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+.metis .tp-bullet {
+    
+    width: 22px;
+    height: 22px;
+	}
+	.zeus .tp-title-wrap{
+	width:none;
+	}
+	.tp-bullet-img-wrap{
+	display:none;
+	}
+	.metis .tp-bullet-title{
+	display:none;
+	}
+	#box {
+  
+ 
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+ 
+}
+	#box:hover {
+ border: solid #8dc63f 1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  padding: 32px 9px 27px 0px;
+
+}
+.zoom {
+ 
+  transition: transform .2s; /* Animation */
+ 
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.service_blog_inner .icon img {
+    width: 88px;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+@media (max-width: 767px){
+.side_bar {
+    margin-top: -26px;
+    margin-left: 56px;
+}
+}
+
+
+
+
+/* product view details */ 
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.plist{
+  font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 25px;
+    height: 50px;
+    border: none !important;
+    line-height: 52px;
+    background: #bddc9e;
+    border-radius: 0;
+    padding: 0px 29px 0px 29px;
+	cursor: pointer;
+  margin: 12px 0 0 0;
+
+}
+.plist:hover ,.plist:focus, .plist:active{
+    background: #0f7b37;
+    color: #fff;
+}
+.plist:active{
+  background: #0f7b37;
+}
+.product_list {
+    min-height: 272px;
+    
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1144px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 88px;
+  color: #f1f1f1;
+  font-size: 81px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.information_bottom {
+  
+    padding: 0px 0px 6px 0px;
+}
+.num_cont{
+text-align: left;
+    padding: 0px 0px 0px 9px;
+	font-family: 'Poppins';
+}
+.info_cont h4, .info_cont p {
+    color: #898989;
+    font-family: 'Poppins';
+	font-weight: none;
+}
+#navbar_menu ul ul li a:hover {
+	
+	background : #0d9a50;
+}
+
+/* client slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .slide img {
+    width: 85px;
+  }
+}
+</style>
+</head>
+<body id="default_theme" class="it_service">
+<!-- loader -->
+<div class="bg_load"> <img class="loader_animation" src="images/logos/benayalogo.png" style="max-height: 200px;" alt="#" /> </div>
+<!-- end loader -->
+<!-- header -->
+<header id="default_header" class="header_style_1">
+  <!-- header top -->
+  
+  <!-- end header top -->
+  <!-- header bottom -->
+  <div class="header_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <!-- logo start -->
+          <div class="logo"> <a href="#"><img src="images/logos/benayalogo.png" alt="logo" /></a> </div>
+          <!-- logo end -->
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+          <!-- menu start -->
+          <div class="menu_side">
+            <div id="navbar_menu">
+              <ul class="first-ul">
+                <li> <a  href="index.html">Home</a>
+                  
+                </li>
+                <li><a  href="about.html">About Us</a></li>
+                <li> <a href="index.html#service">Service</a>                  
+                </li>
+                 <li><a class="active" href="products.html">Products</a>
+                  <ul>
+                    
+                    <li><a href="products.html">Colour Multi Functionals</a></li>
+                    <li><a href="products.html">B / W Multi Functionals</a></li>
+					<li><a href="products.html">Digital Duplicators</a></li>
+                    
+                  </ul></li>
+                <li> <a href="contact.html">Contact</a>
+                  
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <!-- menu end -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header bottom end -->
+</header>
+<!-- end header -->
+<!-- inner page banner -->
+<div id="inner_banner" class="section inner_banner_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="full">
+          <div class="title-holder">
+            <div class="title-holder-cell text-left">
+              <h1 class="page-title">Products</h1>
+              <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Products</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end inner page banner -->
+<!-- section -->
+
+<!-- end section -->
+<div class="section padding_layout_1 product_list_main" style="padding-top: 53px;">
+  <div class="container">
+    <div class="row">
+	 <div class="col-md-9"></div>
+	 <div class="col-md-3">
+	 <div class="row">
+        <div class="side_bar">
+          <div class="side_bar_blog">
+            
+            <!-- <div class="side_bar_search"> -->
+              <!-- <div class="input-group stylish-input-group"> -->
+                <!-- <input class="form-control" placeholder="Search" type="text"> -->
+                <!-- <span class="input-group-addon"> -->
+                <!-- <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button> -->
+                <!-- </span> </div> -->
+            <!-- </div> -->
+          </div>
+          </div>
+        </div>
+      </div>
+	 </div>
+	   <div class="row center">
+		  
+		  <div id="myBtnContainer" style="margin-bottom: 54px;text-align: center;">
+        <!-- <button class="plist active" onclick="filterSelection('all')"> Show all</button> -->
+       
+        <button class="plist active" id="ric" onclick="filterSelection('colorM')"> Colour MultiFunctionals</button>
+        <button class="plist" onclick="filterSelection('bm')"> B & W MultiFunctionals</button>
+		 <button class="plist "  onclick="filterSelection('ricoh')"> Digital Duplicators</button>
+    </div></div>
+<!-- Portfolio Gallery Grid -->
+
+
+		
+	
+					
+					
+<div class="row">
+ 
+  <!--Colour multi functional products -->
+  <div class="column colorM col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+     
+        <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/colour/c1.jpg" alt="" id="id5" onclick="myFunction5()" > </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH MP C2011SP</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div>
+		<img id="bigpic5" src="images/product/prdt-desc/C2011SP.jpg" style="display:none;"/>
+      </a>
+     
+    </div>
+  </div>
+  <div class="column colorM col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+      
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/colour/c2.jpg" alt="" id="id6" onclick="myFunction6()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH MP C407SP</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div>
+		</a>
+      <img id="bigpic6" src="images/product/prdt-desc/C407SP.jpg" style="display:none;"/>
+    </div>
+  </div>
+ 
+ <div class="column colorM col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+      
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/colour/MP_C2004exSP.jpg" alt="" id="id16" onclick="myFunction16()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH MP C2004exSP</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div>
+		</a>
+      <img id="bigpic16" src="images/product/prdt-desc/color/mpc2004exsp.png" style="display:none;"/>
+    </div>
+  </div>
+  <div class="column colorM col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+      
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/colour/mpc-2004.jpg" alt="" id="id17" onclick="myFunction17()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH MP C2004SP</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div>
+		</a>
+      <img id="bigpic17" src="images/product/prdt-desc/color/mpc2004sp.png" style="display:none;"/>
+    </div>
+  </div>
+   <div class="column colorM col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+      
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/colour/imc2000.jpg" alt="" id="id18" onclick="myFunction18()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH IM C2000</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div>
+		</a>
+      <img id="bigpic18" src="images/product/prdt-desc/color/imc2000.png" style="display:none;"/>
+    </div>
+  </div>
+   <div class="column colorM col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+      
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/colour/imc2500.jpg" alt="" id="id19" onclick="myFunction19()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH IM C2500</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div>
+		</a>
+      <img id="bigpic19" src="images/product/prdt-desc/color/imc2500.png" style="display:none;"/>
+    </div>
+  </div>
+<!-- B & W multi functional products -->
+  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+      
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/bw/bw1.jpg" alt="" id="id1" onclick="myFunction()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH MP 6055SP</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div></a>
+      </div> 
+    <img id="bigpic" src="images/product/prdt-desc/6055SP-3555SP.jpg" style="display:none;"/>
+  </div>
+  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+     
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/bw/bw2.jpg" alt="" id="id2" onclick="myFunction2()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH MP 3555SP</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div></a>
+       <img id="bigpic2" src="images/product/prdt-desc/6055SP-3555SP.jpg" style="display:none;"/>
+    </div>
+  </div>
+  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+      
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/bw/bw3.jpg" alt="" id="id3" onclick="myFunction3()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH MP 6503SP</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div></a>
+       <img id="bigpic3" src="images/product/prdt-desc/6503SP.jpg" style="display:none;"/>
+    </div>
+  </div>
+  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+      
+      <a href="#">
+        <div class="product_list">
+          <div class="product_img"> <img class="img-responsive" src="images/product/bw/bw4.jpg" alt="" id="id4" onclick="myFunction4()"> </div>
+          <div class="product_detail_btm">
+          <div class="center">
+            <h4><a href="#">RICOH MP 310SP</a></h4>
+          </div>
+          <!-- <div class="starratin"> -->
+            <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+          <!-- </div> -->
+          <!-- <div class="product_price"> -->
+            <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+          <!-- </div> -->
+          </div>
+        </div></a>
+      <img id="bigpic4" src="images/product/prdt-desc/310SP.jpg" style="display:none;"/>
+    </div>
+  </div>
+  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+    <div class="content">
+     
+        <a href="#">
+          <div class="product_list">
+            <div class="product_img"> <img class="img-responsive" src="images/product/bw/ricoh2014.png" alt="" id="id7" onclick="myFunction7()"> </div>
+            <div class="product_detail_btm">
+            <div class="center">
+              <h4><a href="#">RICOH MP 2014</a></h4>
+            </div>
+            <!-- <div class="starratin"> -->
+              <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+            <!-- </div> -->
+            <!-- <div class="product_price"> -->
+              <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+            <!-- </div> -->
+            </div>
+          </div></a>
+      <img id="bigpic7" src="images/product/prdt-desc/214.jpg" style="display:none;"/>
+    </div>
+  </div>
+	  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+		 <div class="content">
+      
+		  <a href="#">
+			<div class="product_list">
+			  <div class="product_img"> <img class="img-responsive" src="images/product/bw/bw6.jpg" alt="" id="id8" onclick="myFunction8()"> </div>
+			  <div class="product_detail_btm">
+			  <div class="center">
+				<h4><a href="#">RICOH MP 305+ SP</a></h4>
+			  </div>
+			  <!-- <div class="starratin"> -->
+				<!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+			  <!-- </div> -->
+			  <!-- <div class="product_price"> -->
+				<!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+			  <!-- </div> -->
+			  </div>
+			</div></a>
+   <img id="bigpic8" src="images/product/prdt-desc/305+SP.jpg" style="display:none;"/>
+		</div>
+	  </div>
+	  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+              <div class="content">
+               
+                <a href="#">
+                <div class="product_list">
+                  <div class="product_img"> <img class="img-responsive" src="images/product/bw/AD.jpg" alt="" id="id9" onclick="myFunction9()"> </div>
+                  <div class="product_detail_btm">
+                  <div class="center">
+                  <h4><a href="#">RICOH MP 2014AD</a></h4>
+                  </div>
+                  <!-- <div class="starratin"> -->
+                  <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="product_price"> -->
+                  <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+                  <!-- </div> -->
+                  </div>
+                </div></a>
+             
+              </div>
+			  <img id="bigpic9" src="images/product/prdt-desc/214.jpg" style="display:none;"/>
+              </div>
+			  
+			  
+			  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+				  <div class="content">
+				   
+					<a href="#">
+					<div class="product_list">
+					  <div class="product_img"> <img class="img-responsive" src="images/product/bw/D.jpg" alt="" id="id10" onclick="myFunction10()"> </div>
+					  <div class="product_detail_btm">
+					  <div class="center">
+					  <h4><a href="#">RICOH MP 2014D</a></h4>
+					  </div>
+					  <!-- <div class="starratin"> -->
+					  <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+					  <!-- </div> -->
+					  <!-- <div class="product_price"> -->
+					  <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+					  <!-- </div> -->
+					  </div>
+					</div></a>
+				 
+				  </div>
+				  <img id="bigpic10" src="images/product/prdt-desc/214.jpg" style="display:none;"/>
+              </div>
+			  
+			  
+			  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+				  <div class="content">
+				   
+					<a href="#">
+					<div class="product_list">
+					  <div class="product_img"> <img class="img-responsive" src="images/product/bw/IM_2702.png" alt="" id="id11" onclick="myFunction11()"> </div>
+					  <div class="product_detail_btm">
+					  <div class="center">
+					  <h4><a href="#">RICOH IM2702</a></h4>
+					  </div>
+					  <!-- <div class="starratin"> -->
+					  <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+					  <!-- </div> -->
+					  <!-- <div class="product_price"> -->
+					  <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+					  <!-- </div> -->
+					  </div>
+					</div></a>
+				 
+				  </div>
+				  <img id="bigpic11" src="images/product/prdt-desc/bw/im2702.png" style="display:none;"/>
+              </div>
+			  
+			  
+			    <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+				  <div class="content">
+				   
+					<a href="#">
+					<div class="product_list">
+					  <div class="product_img"> <img class="img-responsive" src="images/product/bw/M_2701.png" alt="" id="id12" onclick="myFunction12()"> </div>
+					  <div class="product_detail_btm">
+					  <div class="center">
+					  <h4><a href="#">RICOH M2701</a></h4>
+					  </div>
+					  <!-- <div class="starratin"> -->
+					  <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+					  <!-- </div> -->
+					  <!-- <div class="product_price"> -->
+					  <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+					  <!-- </div> -->
+					  </div>
+					</div></a>
+				 
+				  </div>
+				  <img id="bigpic12" src="images/product/prdt-desc/bw/m2701.png" style="display:none;"/>
+              </div>
+			  
+			  
+			  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+				  <div class="content">
+				   
+					<a href="#">
+					<div class="product_list">
+					  <div class="product_img"> <img class="img-responsive" src="images/product/bw/M_2700.png" alt="" id="id13" onclick="myFunction13()"> </div>
+					  <div class="product_detail_btm">
+					  <div class="center">
+					  <h4><a href="#">RICOH M2700</a></h4>
+					  </div>
+					  <!-- <div class="starratin"> -->
+					  <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+					  <!-- </div> -->
+					  <!-- <div class="product_price"> -->
+					  <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+					  <!-- </div> -->
+					  </div>
+					</div></a>
+				 
+				  </div>
+				  <img id="bigpic13" src="images/product/prdt-desc/bw/m2700.png" style="display:none;"/>
+              </div>
+			    <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+					<div class="content">
+					 
+					  <a href="#">
+						<div class="product_list">
+						  <div class="product_img"> <img class="img-responsive" src="images/product/bw/2555SP.jpg" alt="" id="id14" onclick="myFunction14()"> </div>
+						  <div class="product_detail_btm">
+						  <div class="center">
+							<h4><a href="#">RICOH MP 2555SP</a></h4>
+						  </div>
+						  <!-- <div class="starratin"> -->
+							<!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+						  <!-- </div> -->
+						  <!-- <div class="product_price"> -->
+							<!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+						  <!-- </div> -->
+						  </div>
+						</div></a>
+					   <img id="bigpic14" src="images/product/prdt-desc/6055SP-3555SP.jpg" style="display:none;"/>
+					</div>
+				  </div>
+			  <div class="column bm col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+					<div class="content">
+					 
+					  <a href="#">
+						<div class="product_list">
+						  <div class="product_img"> <img class="img-responsive" src="images/product/bw/4055SP.jpg" alt="" id="id15" onclick="myFunction15()"> </div>
+						  <div class="product_detail_btm">
+						  <div class="center">
+							<h4><a href="#">RICOH MP 4055SP</a></h4>
+						  </div>
+						  <!-- <div class="starratin"> -->
+							<!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+						  <!-- </div> -->
+						  <!-- <div class="product_price"> -->
+							<!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+						  <!-- </div> -->
+						  </div>
+						</div></a>
+					   <img id="bigpic15" src="images/product/prdt-desc/6055SP-3555SP.jpg" style="display:none;"/>
+					</div>
+				  </div>
+			
+			
+		<!-- RICOH Digital Duplicators products -->
+		  <div class="column ricoh col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+			<div class="content">
+       
+            <a href="#">
+            <div class="product_list">
+              <div class="product_img"> <img class="img-responsive" src="images/product/dd/dd3344.jpg" alt="" id="id20" onclick="myFunction20()"> </div>
+              <div class="product_detail_btm">
+              <div class="center">
+              <h4><a href="#">RICOH DD 3344</a></h4>
+              </div>
+              <!-- <div class="starratin"> -->
+              <!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+              <!-- </div> -->
+              <!-- <div class="product_price"> -->
+              <!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+              <!-- </div> -->
+              </div>
+            </div></a>
+      
+			</div>	
+			<img id="bigpic20" src="images/product/prdt-desc/dd/dd3344.png" style="display:none;"/>				
+			</div>
+		 
+	  <div class="column ricoh col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30">
+		<div class="content">
+     
+		  <a href="#">
+			<div class="product_list">
+			  <div class="product_img"> <img class="img-responsive" src="images/product/dd/dx2430.jpg" alt="" id="id21" onclick="myFunction21()"> </div>
+			  <div class="product_detail_btm">
+			  <div class="center">
+				<h4><a href="#">RICOH DX 2430</a></h4>
+			  </div>
+			  <!-- <div class="starratin"> -->
+				<!-- <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div> -->
+			  <!-- </div> -->
+			  <!-- <div class="product_price"> -->
+				<!-- <p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p> -->
+			  <!-- </div> -->
+			  </div>
+			</div></a>
+		</div>
+		<img id="bigpic21" src="images/product/prdt-desc/dd/dx2430.png" style="display:none;"/>
+	  </div>
+		 
+     
+      
+			
+			
+  </div>
+<!-- END GRID -->
+		  </div>
+	  </div>
+
+<!-- The Modal to display description -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+
+
+
+
+	  
+<!--client section -->
+<div class="section padding_layout_1 testmonial_section white_fonts" style="visibility: visible; animation-name: fadeIn;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="full">
+          <div class="main_heading text_align_left">
+            <h2 style="text-transform: none;">OUR CLIENTS</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="container">
+	  
+	   <section class="customer-logos slider">
+		  <div class="slide"><img src="images/clients/sbi.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/Bank-of-Baroda-Logo.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/logo-four-points-by-sheraton.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/tident.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/skyline.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/national.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/cool.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/Kone-og.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/Bosch-logo.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/sboa.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/viswajyothi.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/DB-School-Logo.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/rajagiri.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/carmel.png" width="150" height="152"></div>
+		   <div class="slide"><img src="images/clients/global.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/Lourdes.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/sreesankara.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/maharajas.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/lourdeshospital.jpg" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/lakshmi.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/mother2.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/National_Investigation_Agency_India_logo.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/cochinChamber.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/nedspice.png" width="150" height="152"></div>
+		  <div class="slide"><img src="images/clients/olam.png" width="150" height="152"></div>
+	   </section>
+	</div>   
+   
+  </div>
+</div>
+<!-- end section -->
+<!-- section -->
+<div class="section " id="cont" style="background:#fff">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="full">
+          <div class="contact_us_section">
+            <div class="call_icon"> <img src="images/it_service/phone_icon.png" alt="#" /> </div>
+            <div class="inner_cont">
+              <h2>GET IN TOUCH</h2>
+              <p>Get answers and advice from people you want it from.</p>
+            </div>
+            <div class="button_Section_cont"> <a class="btn dark_gray_bt" href="contact.html">Contact us</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end section -->
+
+<!-- Modal -->
+
+<!-- End Model search bar -->
+<!-- footer -->
+<footer class="footer_style_2">
+  <div class="container-fuild">
+    <div class="row">
+     
+      <div class="footer_blog">
+        <div class="row">
+          <div class="col-md-3">
+              <img src="images/logos/benayalogo.png" style="max-height: 150px;" alt="#" />
+          </div>
+          <div class="col-md-3">
+            <div class="main-heading left_text">
+              <h2>Additional links</h2>
+            </div>
+            <ul class="footer-menu">
+              <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+			  <li><a href="about.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+              <li><a href="#service"><i class="fa fa-angle-right"></i> Services</a></li>
+              <li><a href="#prod"><i class="fa fa-angle-right"></i> Products</a></li>
+              
+              <li><a href="#cont"><i class="fa fa-angle-right"></i> Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="main-heading left_text">
+              <h2>Services</h2>
+            </div>
+            <ul class="footer-menu">
+              <li><a href="#"><i class="fa fa-angle-right"></i> RICOH product sales</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i> Fast & Affordable services</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i> Customer serivice</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="main-heading left_text">
+              <h2>Contact us</h2>
+            </div>
+			<div class="information_bottom text_align_center">
+                  <div class="icon_bottom"> <i class="fa fa-road" aria-hidden="true"></i> </div>
+                  <div class="info_cont">
+                   
+                    <p>No 2456 bavarapadam road,<br>
+					Thammanam, Kochi 682032</p>
+                  </div>
+                </div>
+				
+				<div class="information_bottom text_align_center">
+                  <div class="icon_bottom"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
+                  <div class="info_cont">
+                    <p>benayasolutions@gmail.com</p>
+                    
+                  </div>
+                </div>
+				<div class="information_bottom text_align_center">
+                  <div class="icon_bottom"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
+                  <div class="info_cont num_cont">
+                    <p>8138998877, 9447039682, 9061729900</p>
+                   
+                  </div>
+                </div>
+            <!-- <p><i class="fa fa-road" ></i>  No 2456 bavarapadath road,<br> -->
+              <!-- Thammanam, Kochi 682032<br> -->
+			  <!-- <i class="fa fa-envelope" ></i>  benayasolutions@gmail.com<br> -->
+              <!-- <span style="font-size:18px;"><a href="#"><i class="fa fa-phone" ></i>  8138998877, 9447039682, 9061729900</a></span></p> -->
+            <!-- <div class="footer_mail-section"> -->
+              <!-- <form> -->
+                <!-- <fieldset> -->
+                <!-- <div class="field"> -->
+                  <!-- <input placeholder="Email" type="text"> -->
+                  <!-- <button class="button_custom"><i class="fa fa-envelope" aria-hidden="true"></i></button> -->
+                <!-- </div> -->
+                <!-- </fieldset> -->
+              <!-- </form> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+	  <div class="map_section">
+       <div style="width: 100%"><iframe width="100%" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20Benaya%20Solutions,%20No%202456%20bavarapadath%20road,%20Thammanam,%20Kochi%20682032+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.mapsdirections.info/en/measure-map-radius/">Draw Map Circle</a></div>
+		 </div>
+      <div class="cprt">
+        <p>benaya solutions © Copyrights 2020 </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer -->
+<a href="#" class="back-to-top" style="display: none;"><i class="fa fa-chevron-up" ></i></a>
+<!-- end footer -->
+<!-- js section -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- menu js -->
+<script src="js/menumaker.js"></script>
+<!-- wow animation -->
+<script src="js/wow.js"></script>
+<!-- custom js -->
+<script src="js/custom.js"></script>
+<!-- revolution js files -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!-- client slider -->
+<script src="js/slick.js"></script>
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+<!-- View Product Description -->
+<script>
+window.onload=function(){
+  document.getElementById("ric").click();
+  document.getElementById("ric").focus();
+};
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+
+
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+	function myFunction() {
+	modal.style.display = "block";
+	  modalImg.src = document.getElementById('bigpic').src;
+	}
+	function myFunction2() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic2').src;
+	}
+	function myFunction3() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic3').src;
+	}
+	function myFunction4() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic4').src;
+	}
+	function myFunction5() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic5').src;
+	}
+	function myFunction6() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic6').src;
+	}
+	function myFunction7() {
+	modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic7').src;
+	}
+	function myFunction8() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic8').src;
+	}
+	function myFunction9() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic9').src;
+	}
+	function myFunction10() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic10').src;
+	}
+	function myFunction11() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic11').src;
+	}
+	function myFunction12() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic12').src;
+	}
+	function myFunction13() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic13').src;
+	}
+	function myFunction14() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic14').src;
+	}
+	function myFunction15() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic15').src;
+	}
+	function myFunction16() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic16').src;
+	}
+	function myFunction17() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic17').src;
+	}
+	function myFunction18() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic18').src;
+	}
+	function myFunction19() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic19').src;
+	}
+	function myFunction20() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic20').src;
+	}
+	function myFunction21() {
+		modal.style.display = "block";
+	    modalImg.src = document.getElementById('bigpic21').src;
+	}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+
+<script>
+jQuery(document).ready(function( $ ) {
+
+  // Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+  $('.back-to-top').click(function(){
+    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+    return false;
+  });
+  
+  });
+  </script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("plist");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
